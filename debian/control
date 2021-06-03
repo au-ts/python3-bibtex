@@ -1,0 +1,21 @@
+Source: python-bibtex
+Section: python
+Priority: optional
+Maintainer: Chris Lawrence <lawrencc@debian.org>
+Build-Depends: debhelper (>= 7), python3-all-dev (>= 3.7.3), libglib2.0-dev, librecode-dev, dh-python
+Standards-Version: 3.9.5
+Homepage: http://www.pybliographer.org/
+
+Package: python3-bibtex
+Architecture: any
+Depends: ${shlibs:Depends}, ${python3:Depends}, ${misc:Depends}
+Provides: ${python3:Provides}
+Conflicts: librecode0 (<< 3.6-10), pybliographer (<< 1.2.7-1)
+Description: Python interfaces to BibTeX and the GNU Recode library
+ This module contains two extensions needed for pybliographer:
+ .
+  * a BibTeX parser
+  * a simple binding to GNU Recode
+ .
+ However, it may be useful to programmers working on other projects as
+ well.

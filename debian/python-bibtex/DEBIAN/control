@@ -1,0 +1,18 @@
+Package: python-bibtex
+Version: 1.2.7-1
+Architecture: amd64
+Maintainer: Chris Lawrence <lawrencc@debian.org>
+Installed-Size: 112
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.16.0), librecode0 (>= 3.6)
+Conflicts: librecode0 (<< 3.6-10), pybliographer (<< 1.2.7-1)
+Section: python
+Priority: optional
+Homepage: http://www.pybliographer.org/
+Description: Python interfaces to BibTeX and the GNU Recode library
+ This module contains two extensions needed for pybliographer:
+ .
+  * a BibTeX parser
+  * a simple binding to GNU Recode
+ .
+ However, it may be useful to programmers working on other projects as
+ well.

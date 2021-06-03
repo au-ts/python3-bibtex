@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: python-bibtex
+Version: 1.2.7
+Summary: A Python extension to parse BibTeX files
+Home-page: http://pybliographer.org/
+Author: Frederic Gobry
+Author-email: gobry@pybliographer.org
+License: GPL
+Description: 
+        This module contains two extensions needed for pybliographer:
+        
+           - a bibtex parser
+           - a simple binding to GNU Recode
+        
+        It requires the following libraries to be installed:
+        
+           - Glib-2.0 (and its development headers)
+           - GNU Recode 3.5 (and its development headers)
+        
+        
+Platform: UNKNOWN

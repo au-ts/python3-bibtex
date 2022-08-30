@@ -1,3 +1,9 @@
+python3-bibtex (1.2.7-1-ts) unstable; urgency=medium
+
+  * Convert to Python3
+
+ -- Peter Chubb <peterc@trustworthy.systems>  Thu, 03 Jun 2021 11:33:42 +1000
+
 python-bibtex (1.2.7-1) unstable; urgency=medium
 
   * New upstream release.

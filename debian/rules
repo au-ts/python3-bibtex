@@ -24,7 +24,6 @@ configure: configure-stamp
 configure-stamp:
 	dh_testdir
 	# Add here commands to configure the package.
-
 	touch configure-stamp
 
 build: build-arch build-indep
@@ -37,7 +36,6 @@ build-stamp: configure-stamp
 	# Add here commands to compile the package.
 	(set -e; for v in $(PYVERS); do CFLAGS="$(CFLAGS)" $$v ./setup.py build -g; done)
 	#/usr/bin/docbook-to-man debian/python-bibtex.sgml > python-bibtex.1
-
 	touch build-stamp
 
 clean:
@@ -59,7 +57,7 @@ install: build
 
 	# Add here commands to install the package into debian/python-bibtex.
 	#$(MAKE) install DESTDIR=$(CURDIR)/debian/python-bibtex
-	(set -e; for v in $(PYVERS); do $$v ./setup.py install --root=$(CURDIR)/debian/python-bibtex --no-compile --install-layout=deb; done)
+	(set -e; for v in $(PYVERS); do $$v ./setup.py install --root=$(CURDIR)/debian/python3-bibtex --no-compile --install-layout=deb; done)
 
 # Build architecture-independent files here.
 binary-indep: build install
